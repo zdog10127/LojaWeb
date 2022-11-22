@@ -25,10 +25,12 @@ namespace API.Loja.Infra.Repositorio
             var lista = new List<Categoria>();
             var listaCategoria = await _contexto.Categorias.ToListAsync();
             var listaProdutos = await _contexto.Produtos.ToListAsync();
+
             foreach (var item in listaCategoria)
             {
                     lista.Add(new Categoria { IdCategoria = item.IdCategoria, CodigoCategoria = item.CodigoCategoria, Descricao = item.Descricao, Produtos = listaProdutos });               
             }
+
             return lista.Distinct().ToList();
         }
 
