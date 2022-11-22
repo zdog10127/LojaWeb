@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\API.Loja.Dominio\API.Loja.Dominio.csproj" />
+    <ProjectReference Include="..\API.Loja.Infra\API.Loja.Infra.csproj" />
+  </ItemGroup>
+
+</Project>
