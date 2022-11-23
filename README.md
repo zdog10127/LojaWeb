@@ -29,16 +29,16 @@ $ cd frontend
 $ yarn install
 
 # Iniciar o projeto Front
-$ cd backend
-$ dotnet-run
+$ cd frontend
+$ yarn start
 
 # Instalar o Banco
 $ Add-Migration Nome_da_migration
 $ Update-Database 
 
 # Iniciar o projeto Back
-$ cd frontend
-$ yarn start
+$ cd backend
+$ dotnet-run
 ```
 O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
