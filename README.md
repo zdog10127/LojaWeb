@@ -28,10 +28,15 @@ Para iniciá-lo, siga os passos abaixo:
 $ cd frontend
 $ yarn install
 
-# Iniciar o projeto
+# Iniciar o projeto Front
 $ cd backend
 $ dotnet-run
 
+# Instalar o Banco
+$ Add-Migration Nome_da_migration
+$ Update-Database 
+
+# Iniciar o projeto Back
 $ cd frontend
 $ yarn start
 ```
