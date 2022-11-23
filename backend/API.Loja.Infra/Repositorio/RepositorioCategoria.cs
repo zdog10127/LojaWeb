@@ -22,16 +22,8 @@ namespace API.Loja.Infra.Repositorio
 
         public async Task<List<Categoria>> ListarTodosOsCategoriaAsync()
         {
-            var lista = new List<Categoria>();
-            var listaCategoria = await _contexto.Categorias.ToListAsync();
-            var listaProdutos = await _contexto.Produtos.ToListAsync();
-
-            foreach (var item in listaCategoria)
-            {
-                    lista.Add(new Categoria { IdCategoria = item.IdCategoria, CodigoCategoria = item.CodigoCategoria, Descricao = item.Descricao, Produtos = listaProdutos });               
-            }
-
-            return lista.Distinct().ToList();
+            var listarCategorias = await _contexto.Categorias.ToListAsync();
+            return listarCategorias;
         }
 
         public async Task<Categoria> ListarCategoriaPorIdAsync(int idCategoria)
@@ -56,7 +48,6 @@ namespace API.Loja.Infra.Repositorio
 
             categoriaExistente.CodigoCategoria = categoria.CodigoCategoria;
             categoriaExistente.Descricao = categoria.Descricao;
-            categoriaExistente.Produtos = categoria.Produtos;
 
             _contexto.Categorias.Update(categoriaExistente);
             _contexto.SaveChanges();

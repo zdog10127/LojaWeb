@@ -1,0 +1,62 @@
+.register-contatiner {
+    height: 100vh;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color: #FFF;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin: 10px 0px;
+}
+
+.input-group p {
+    color: #FFF;
+}
+
+input, select {
+    width: 100%;
+    max-width: 500px;
+    height: 40px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+header h1 {
+    margin-left: 10px;
+}
+
+h3 {
+    color: #FFF;
+}
+
+button {
+    background-color: #FFF;
+    color: #000;
+    width: 100%;
+    height: 50px;
+    max-width: 500px;
+    border-width: 0px;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 80%;
+}

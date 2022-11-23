@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 500 16px Poppins, sans-serfi;
+    background-color: rgba(7, 150, 45, 0.651);
+    -webkit-font-smoothing: antialiased;
+}
+
+input, button, textarea, select {
+    font: 500 20px Poppins, sans-serfi;
+}
+
+input, select {
+    border: 0;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #FFF;
+}
+
+button {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}

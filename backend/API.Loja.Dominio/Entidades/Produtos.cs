@@ -25,6 +25,6 @@ namespace API.Loja.Dominio.Entidades
         public string Descricao { get; set; }
 
         [Column("Preco", TypeName = "decimal")]
-        public decimal Preço { get; set; }
+        public decimal Preco { get; set; }
     }
 }

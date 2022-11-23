@@ -47,7 +47,7 @@ namespace API.Loja.Infra.Repositorio
 
             produtosExistentes.CodigoProduto = produtos.CodigoProduto;
             produtosExistentes.Descricao = produtos.Descricao;
-            produtosExistentes.Preço = produtos.Preço;
+            produtosExistentes.Preco = produtos.Preco;
 
             _contexto.Produtos.Update(produtosExistentes);
             _contexto.SaveChanges();
